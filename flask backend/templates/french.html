@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Évaluation de Lecture - Français</title>
+  <link rel="stylesheet" href="/static/stylefr.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📖 Évaluation de lecture (Français)</h1>
+
+    <div class="text-section">
+      <h2>📝 Entrez un texte à lire</h2>
+      <textarea id="input-text" rows="5" placeholder="Saisir le texte ici...">Le chat noir court dans le jardin. Il cherche une souris sous les feuilles.</textarea>
+      <br>
+      <button id="validate-text">✅ Valider le texte</button>
+    </div>
+
+    <div class="text-section" style="display:none;" id="confirmed-section">
+      <h2>📜 Texte à lire</h2>
+      <p id="target-text"></p>
+    </div>
+
+    <div class="record-section" style="display:none;">
+      <h2>🎤 Enregistrez votre lecture</h2>
+      <button id="record-btn">🎙️ Démarrer l'enregistrement</button>
+      <button id="stop-btn" disabled>⏹️ Arrêter</button>
+    </div>
+
+    <div class="result-section">
+      <h2>📊 Résultats</h2>
+      <p><strong>Texte transcrit :</strong> <span id="transcription">---</span></p>
+      <p><strong>Similarité :</strong> <span id="similarity">---</span></p>
+      <p><strong>🗣️ Feedback :</strong> <span id="feedback">---</span></p>
+    </div>
+  </div>
+
+  <script src="/static/script-fr.js"></script>
+</body>
+</html>
